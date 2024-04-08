@@ -22,6 +22,7 @@ const getDefinition  = function (userInput) {
             definitionBox.textContent = definition
           }).catch(error => {
             console.error('There was a problem with the fetch operation:', error);
+            definitionBox.textContent = "There was an error fetching the definition. Make sure you are entering a valid English or Spanish word, if problems persist, check your network connection."
         });
     };
 
